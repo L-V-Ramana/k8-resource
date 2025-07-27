@@ -7,7 +7,7 @@ metadata:
     project: roboshop
     environment: dev
     tire: backend
-src:
+spec:
   containers:
   - name: nginx
     image: nginx
