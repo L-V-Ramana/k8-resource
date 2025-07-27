@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicaSet
 metadata:
-  name: nginx-Replicaset
+  name: nginx-replicaset
   lable: 
     project: roboshop
     environment: dev
