@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environment
+  labels:
+    project: roboshop
+    environment: dev
+  annotations:
+    jenkins: https://dev-build/jenkins/job
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+     request:
+        memory: "64mi"
+        cpu: "100m"
+     limit:
+        memory: "124mi"
+        cpu: "150m"
+    env:
+      - name: course
+        value: "devops"
+      - name: trainer
+        value: "siva"
+

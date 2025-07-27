@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: CongigMap
+metadata:
+  name: configmap
+  labels:
+    environmet: dev
+    project: roboshop
+data:
+  name: "ramana"
+  previouscomp: "peopletech"
+  experiance: "2yrs"
