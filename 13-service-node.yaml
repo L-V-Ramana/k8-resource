@@ -26,6 +26,6 @@ metadata:
       environment: dev
       purpose: service-np
 spec:
-  container:
+  containers:
   - name: nginx
     image: nginx
