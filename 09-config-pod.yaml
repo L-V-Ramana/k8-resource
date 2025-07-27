@@ -10,7 +10,7 @@ spec:
   - name: nginx
     image: nginx
     envfrom:
-      - congigMapRef: 
+      - configMapRef: 
           name: configmap
           
 # apiVersion: v1
