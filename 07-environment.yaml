@@ -13,10 +13,10 @@ spec:
     image: nginx
     resources:
      requests:
-        memory: "64mi"
+        memory: "64Mi"
         cpu: "100m"
      limits:
-        memory: "124mi"
+        memory: "124Mi"
         cpu: "150m"
     env:
       - name: course
