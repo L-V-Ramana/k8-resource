@@ -3,15 +3,13 @@ kind: Service
 metadata:
   name: nginx
   labels:
-    project: roboshop
-    environment: dev
     purpose: service-demo
 spec:
   selector:
     environment: dev
     project: roboshop
     purpose: pod-service
-ports:
+  ports:
   - protocol: tcp
     port: 80 #service port
     targetport: 80 #container port
