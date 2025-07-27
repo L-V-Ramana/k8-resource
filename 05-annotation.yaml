@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: anotations
+  name: annotations
   labels:
     purpose: demo
     environment: dev
     project: devops
-  anotations:
+  annotations:
     purpose: anotations
     buildurl: https://buildurl
     descreption: This is demo for the anotations
