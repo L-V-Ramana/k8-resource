@@ -21,7 +21,7 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: nginx-lb
-  lables:
+  labels:
     project: roboshop
     environment: dev
     purpose: service-lb
