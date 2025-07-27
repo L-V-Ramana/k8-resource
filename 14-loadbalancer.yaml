@@ -7,7 +7,7 @@ metadata:
 
 spec:
   type: LoadBalancer
-  selectors:
+  selector:
     project: roboshop
     environment: dev
     purpose: service-lb
