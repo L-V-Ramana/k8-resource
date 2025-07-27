@@ -14,9 +14,6 @@ spec:
     port: 80 #service port
     targetPort: 80 #container port
 
-
-
-
 ---
 
 apiVersion: v1
