@@ -12,7 +12,7 @@ spec:
     environment: dev
     purpose: service-lb
   ports:
-    - protocol:
+    - protocol: TCP
       port: 80
       targetPort: 80
 
