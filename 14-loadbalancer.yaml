@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: niginx-lb-port
   labels:
-      purpose: nginx-lb-port
+    purpose: nginx-lb-port
 
 spec:
   type: LoadBalancer
@@ -16,7 +16,7 @@ spec:
       port: 80
       targetPort: 80
 
-
+---
 apiVersion: v1
 kind: Pod
 metadata: 
