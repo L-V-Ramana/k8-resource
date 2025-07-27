@@ -19,7 +19,7 @@ spec:
         project: roboshop
         environment: dev
         purpose: deployment
-  spec:
-    containers:
-    - name: nginx
-      image: nginx
+    spec:
+      containers:
+       - name: nginx
+         image: nginx
