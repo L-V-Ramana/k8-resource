@@ -9,7 +9,7 @@ metadata:
 spec:
   replicas: 2 
   selector:
-    matchlables:
+    matchLables:
       purpose: rs-demo
       project: roboshop
       environment: dev 
