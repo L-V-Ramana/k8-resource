@@ -16,7 +16,7 @@ spec:
 
   template:
     metadata:
-      lables:
+      labels:
         purpose: rs-demo
         project: roboshop
         environment: dev
