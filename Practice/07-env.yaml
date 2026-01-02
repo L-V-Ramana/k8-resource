@@ -1,0 +1,15 @@
+apiVeraion: v1
+kind: Pod
+metadata:
+  name: env
+  labels:
+    purpose: "environment variables"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: "course"
+      value: "devops"
+    - name: "duration"
+      value: "120h"
