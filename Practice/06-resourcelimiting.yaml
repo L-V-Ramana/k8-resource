@@ -4,14 +4,14 @@ metadata:
   name: resource-limiting
   labels:
     purpose: "limitimg-resorce"
-  spec:
-    containers:
-      name: nginx
-      image: nginx
-      resources:
-        requests:
-          cpu: "68Mi"
-          memory: "100m"
-        limits:
-          cpu: "128Mi"
-          memory: "150m"
+spec:
+  containers:
+    name: nginx
+    image: nginx
+    resources:
+      requests:
+        cpu: "68Mi"
+        memory: "100m"
+      limits:
+        cpu: "128Mi"
+        memory: "150m"
