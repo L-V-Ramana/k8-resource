@@ -7,5 +7,5 @@ metadata:
     environment: dev
   annotations:
     description: "used for revision"
-  data:
-    url: "https://ramana.site"
+data:
+   url: "https://ramana.site"
