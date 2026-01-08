@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: refering  ConfigMap
+  name: referingconfigmap
   labels:
     purpose: practice
-  spec:
-    containers:
-    - name: nginx
-      image: nginx
-      envFrom:
-        - configMapRef:
-            name: DemoMapfile
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    envFrom:
+      - configMapRef:
+          name: DemoMapfile
