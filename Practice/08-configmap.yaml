@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: DemoMapfile
+  name: demomapfile
   labels:
     project: roboshop
     environment: dev
