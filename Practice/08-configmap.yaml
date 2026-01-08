@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: DemoMapfile
+  labels:
+    project: roboshop
+    environment: dev
+  annotations:
+    description: "used for revision"
+  data:
+    url: "https://ramana.site"
