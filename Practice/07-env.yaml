@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: env
   labels:
-    purpose: "environment variables"
+    purpose: "environment-variables"
 spec:
   containers:
   - name: nginx
