@@ -9,7 +9,6 @@ metadata:
 spec:
   type: NodePort
   selector:
-    matchLabels:
      purpose: practice-np
      project: dummy-np
      env: dev-np
