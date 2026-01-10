@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: nginx-np
+  labels:
+    purpose: practice-np
+    project: dummy-np
+    env: dev-np
+spec:
+  type: NodePort
+  selectors:
+     purpose: practice-np
+     project: dummy-np
+     env: dev-np
+  ports:
+    - port: 80
+      targetPort: 80
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    purpose: practice-np
+    project: dummy-np
+    env: dev-np
+spec:
+  containers:
+  - name: nginx
+    image: nginx

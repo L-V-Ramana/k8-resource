@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: nginx-lb
+  labels:
+    purpose: practice-lb
+    project: dummy-lb
+    env: dev-lb
+spec:
+  type: loadbalncer
+  selectors:
+    purpose: practice-lb
+    project: dummy-lb
+    env: dev-lb
+  ports:
+     protocol: TCP
+     port: 80
+     targetPort: 80
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    purpose: practice-lb
+    project: dummy-lb
+    env: dev-lb
+spec:
+  containers:
+  - name: nginx
+    image: nginx

@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: nginx-service
+  labels:
+    project: dummy
+    purpose: practice
+    environment: dev
+spec:
+  selector:
+    project: dummy
+    purpose: practice
+    environment: dev
+  ports:
+    protocol: TCP
+    port: 80
+    targetPort: 80
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    project: dummy
+    purpose: practice
+    environment: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
