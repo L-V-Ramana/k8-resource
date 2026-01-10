@@ -8,7 +8,7 @@ metadata:
     env: dev
 spec:
   replicas: 2
-  labelsFrom:
+  matchLabels:
     purpose: practice
     project: dummy
     env: dev
