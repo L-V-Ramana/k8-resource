@@ -13,14 +13,14 @@ spec:
       purpose: practice
       project: dummy
       env: dev
-template:
-  metadata:
-    name: nginx
-    labels:
-      purpose: practice
-      project: dummy
-      env: dev
-  spec:
-    containers:
-    - name: nginx
-      image: nginx:stable-perl
+  template:
+    metadata:
+      name: nginx
+      labels:
+        purpose: practice
+        project: dummy
+        env: dev
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable-perl
