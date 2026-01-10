@@ -8,14 +8,15 @@ metadata:
     env: dev
 spec:
   replicas: 2
-  matchLabels:
+  selector:
+    matchLabels:
     purpose: practice
     project: dummy
     env: dev
   template:
     metadata:
       name: nginx
-      lables:
+      labels:
         purpose: practice
         project: dummy
         env: dev
