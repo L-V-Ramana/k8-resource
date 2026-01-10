@@ -7,7 +7,7 @@ metadata:
     project: dummy-lb
     env: dev-lb
 spec:
-  type: loadbalncer
+  type: Loadbalancer
   selector:
     purpose: practice-lb
     project: dummy-lb
