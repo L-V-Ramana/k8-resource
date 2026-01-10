@@ -10,9 +10,9 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-    purpose: practice
-    project: dummy
-    env: dev
+      purpose: practice
+      project: dummy
+      env: dev
   template:
     metadata:
       name: nginx
