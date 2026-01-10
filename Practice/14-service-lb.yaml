@@ -8,14 +8,14 @@ metadata:
     env: dev-lb
 spec:
   type: loadbalncer
-  selectors:
+  selector:
     purpose: practice-lb
     project: dummy-lb
     env: dev-lb
   ports:
-     protocol: TCP
-     port: 80
-     targetPort: 80
+  - protocol: TCP
+    port: 80
+    targetPort: 80
 ---
 
 apiVersion: v1
