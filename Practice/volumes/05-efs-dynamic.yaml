@@ -1,0 +1,50 @@
+---
+#PVC
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-claim
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: efs-sc
+  resources:
+    requests:
+      storage: 5Gi
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: efs-app
+  labels:
+    purpose: practice
+    project: roboshop
+spec:
+  containers:
+    - name: app
+      image: rockylinux:8
+      volumeMounts:
+        - name: persistent-storage
+          mountPath: /data
+  volumes:
+    - name: persistent-storage
+      persistentVolumeClaim:
+        claimName: efs-claim
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: efs-dynamic
+  labels:
+    purpose: practice
+    project: roboshop
+spec:
+  type: LoadBalancer
+  selectors:
+    purpose: practice
+    project: roboshop
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
