@@ -54,7 +54,7 @@ metadata:
   lables: 
 spec:
   type: LoadBalancer
-  selectors:
+  selector:
     purpose: ebs-static
     environment: dev
   ports:
