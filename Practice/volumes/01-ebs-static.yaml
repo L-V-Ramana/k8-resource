@@ -37,8 +37,8 @@ metadata:
 spec:
   nodeSelector: 
   containers:
-  - name: nginx
-    image: nginx
+  - name: Nginx
+    image: Nginx
     volumeMounts:
     - name: persistent-storage
       mountPath: /data
