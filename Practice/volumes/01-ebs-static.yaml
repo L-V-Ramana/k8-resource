@@ -52,6 +52,8 @@ kind: Service
 metadata:
   name: nginx-service
   lables: 
+    purpose: ebs-static
+    environment: dev
 spec:
   type: LoadBalancer
   selector:
