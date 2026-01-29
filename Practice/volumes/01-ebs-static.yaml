@@ -30,7 +30,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Nginx
+  name: nginx
   labels:
     purpose: ebs-static
     environment: dev
