@@ -35,10 +35,10 @@ metadata:
     purpose: ebs-static
     environment: dev
 spec:
-  nodeSelector: 
   containers:
   - name: nginx
     image: nginx
+    imagePullPolicy: Always
     volumeMounts:
     - name: persistent-storage
       mountPath: /data
