@@ -35,6 +35,8 @@ metadata:
     purpose: ebs-static
     environment: dev
 spec:
+  nodeSelector:
+    topology.kubernetes.io/region: us-east-1
   containers:
   - name: nginx
     image: nginx
