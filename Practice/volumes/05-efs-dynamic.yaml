@@ -6,7 +6,7 @@ metadata:
   name: efs-claim
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   storageClassName: "efs"
   resources:
     requests:
