@@ -7,7 +7,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: efs
+  storageClassName: "efs"
   resources:
     requests:
       storage: 5Gi
