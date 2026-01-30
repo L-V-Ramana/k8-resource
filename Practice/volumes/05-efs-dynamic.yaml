@@ -41,7 +41,7 @@ metadata:
     project: roboshop
 spec:
   type: LoadBalancer
-  selectors:
+  selector:
     purpose: practice
     project: roboshop
   ports:
