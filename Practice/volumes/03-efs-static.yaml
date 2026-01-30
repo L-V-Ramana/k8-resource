@@ -51,7 +51,7 @@ spec:
 #service
 
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
   name: efs-static
   labels:
