@@ -6,7 +6,7 @@ metadata:
   name: efs-claim
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   storageClassName: "efs"
   resources:
     requests:
@@ -24,12 +24,12 @@ spec:
     - name: nginx
       image: nginx
       volumeMounts:
-        - name: persistent-storage
-          mountPath: /data
+      - name: persistent-storage
+        mountPath: /data
   volumes:
-    - name: persistent-storage
-      persistentVolumeClaim:
-        claimName: efs-claim
+  - name: persistent-storage
+    persistentVolumeClaim:
+      claimName: efs-claim
 ---
 apiVersion: v1
 kind: Service
