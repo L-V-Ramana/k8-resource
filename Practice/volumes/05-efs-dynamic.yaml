@@ -24,7 +24,6 @@ spec:
   containers:
     - name: nginx
       image: nginx
-      imagePullpolicy: Always
       volumeMounts:
         - name: persistent-storage
           mountPath: /data
